@@ -1,8 +1,22 @@
+class Data
+{
+	int getData()
+	{
+		return 10;
+	}
+	String getData()
+	{
+		return "hello";
+	}
+}
 class Demo 
 {
 	public static void main(String[] args) 
 	{
-		int[] x=new int[]{10,20,30,40};
-		System.out.println(x[10]);
+		Data ob=new Data();
+		int x=ob.getData();
+		String y=ob.getData();
+		System.out.println(x);
+		System.out.println(y);
 	}
 }
