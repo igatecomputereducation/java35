@@ -1,14 +1,9 @@
-class Demo 
+
+import java.util.*;
+class Demo
 {
-	public static void main(String[] args)throws Exception 
+	public static void main(String args[])
 	{
-		System.out.println("Hello");
-		Thread.sleep(5000);
-		System.out.println("Kavali");
-		for(int i=1;i<=5;i++)
-		{
-			System.out.println(i);
-			Thread.sleep(2000);
-		}
+		System.out.println(new Date().getMonth());
 	}
 }
