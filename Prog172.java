@@ -1,3 +1,10 @@
+class BillingException extends Exception
+{
+	BillingException(String msg)
+	{
+		super(msg);
+	}
+}
 class Billing
 {
 	void printBill(float price,int qty)throws BillingException
@@ -10,5 +17,19 @@ class Billing
 		System.out.println("Bill:"+bill);
 		System.out.println("Discount:"+dis);
 		System.out.println("Netbill:"+nbill);
+	}
+}
+class Prog172
+{
+	public static void main(String[] args)//throws BillingException
+	{
+		Billing ob=new Billing();
+		try{
+			ob.printBill(-45.50f,12);
+		}
+		catch(BillingException b)
+		{
+			System.out.println(b.getMessage());
+		}
 	}
 }
